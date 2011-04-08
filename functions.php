@@ -108,81 +108,34 @@ function twentyten_setup() {
 		define( 'HEADER_TEXTCOLOR', '' );
 
 	// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
-	if ( ! defined( 'HEADER_IMAGE' ) )
-		define( 'HEADER_IMAGE', '%s/images/headers/path.jpg' );
+  // if ( ! defined( 'HEADER_IMAGE' ) )
+  //  define( 'HEADER_IMAGE', '%s/images/headers/path.jpg' );
 
 	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
 	// Add a filter to twentyten_header_image_width and twentyten_header_image_height to change these values.
-	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyten_header_image_width', 940 ) );
-	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentyten_header_image_height', 198 ) );
+  // define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyten_header_image_width', 940 ) );
+  // define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentyten_header_image_height', 198 ) );
 
 	// We'll be using post thumbnails for custom header images on posts and pages.
 	// We want them to be 940 pixels wide by 198 pixels tall.
 	// Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
-	set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
+	set_post_thumbnail_size( 940, 198, true );
 
 	// Don't support text inside the header image.
 	if ( ! defined( 'NO_HEADER_TEXT' ) )
 		define( 'NO_HEADER_TEXT', true );
-
-	// Add a way for the custom header to be styled in the admin panel that controls
-	// custom headers. See twentyten_admin_header_style(), below.
-	// add_custom_image_header( '', 'twentyten_admin_header_style' );
-
-	// ... and thus ends the changeable header business.
-
-	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
-  // register_default_headers( array(
-  //  'berries' => array(
-  //    'url' => '%s/images/headers/berries.jpg',
-  //    'thumbnail_url' => '%s/images/headers/berries-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Berries', 'twentyten' )
-  //  ),
-  //  'cherryblossom' => array(
-  //    'url' => '%s/images/headers/cherryblossoms.jpg',
-  //    'thumbnail_url' => '%s/images/headers/cherryblossoms-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Cherry Blossoms', 'twentyten' )
-  //  ),
-  //  'concave' => array(
-  //    'url' => '%s/images/headers/concave.jpg',
-  //    'thumbnail_url' => '%s/images/headers/concave-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Concave', 'twentyten' )
-  //  ),
-  //  'fern' => array(
-  //    'url' => '%s/images/headers/fern.jpg',
-  //    'thumbnail_url' => '%s/images/headers/fern-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Fern', 'twentyten' )
-  //  ),
-  //  'forestfloor' => array(
-  //    'url' => '%s/images/headers/forestfloor.jpg',
-  //    'thumbnail_url' => '%s/images/headers/forestfloor-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Forest Floor', 'twentyten' )
-  //  ),
-  //  'inkwell' => array(
-  //    'url' => '%s/images/headers/inkwell.jpg',
-  //    'thumbnail_url' => '%s/images/headers/inkwell-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Inkwell', 'twentyten' )
-  //  ),
-  //  'path' => array(
-  //    'url' => '%s/images/headers/path.jpg',
-  //    'thumbnail_url' => '%s/images/headers/path-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Path', 'twentyten' )
-  //  ),
-  //  'sunset' => array(
-  //    'url' => '%s/images/headers/sunset.jpg',
-  //    'thumbnail_url' => '%s/images/headers/sunset-thumbnail.jpg',
-  //    /* translators: header image description */
-  //    'description' => __( 'Sunset', 'twentyten' )
-  //  )
-  // ) );
+		
+	// Define shortcodes
+	function doBoxShortcode($base_class, $atts, $content = "" ) {
+    $classes = $base_class . " " . ($atts['last']!=null ?'last':'');
+    return "<div class='{$classes}'>{$content}</div>";
+  }
+  function doBox2Shortcode($atts, $content = "") { return doBoxShortcode("box2", $atts, $content); }
+  function doBox3Shortcode($atts, $content = "") { return doBoxShortcode("box3", $atts, $content); }
+	add_shortcode('box2', 'doBox2Shortcode');
+	add_shortcode('box3', 'doBox3Shortcode');
 }
+
 endif;
 
 if ( ! function_exists( 'twentyten_admin_header_style' ) ) :

@@ -1409,6 +1409,19 @@ code {
 	}
 }
 
+/* = Shortcodes
+-------------------------------------------------------------- */
+.box2 {
+  width: 295px;
+  display: inline-block;
+  margin: 5px 10px;
+}
+.box3 {
+  width: 200px;
+  display: inline-block;
+  margin: 5px;
+}
+
 /* = Helpers
 -------------------------------------------------------------- */
 /* for image replacement */
