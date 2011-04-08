@@ -127,61 +127,61 @@ function twentyten_setup() {
 
 	// Add a way for the custom header to be styled in the admin panel that controls
 	// custom headers. See twentyten_admin_header_style(), below.
-	add_custom_image_header( '', 'twentyten_admin_header_style' );
+	// add_custom_image_header( '', 'twentyten_admin_header_style' );
 
 	// ... and thus ends the changeable header business.
 
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
-	register_default_headers( array(
-		'berries' => array(
-			'url' => '%s/images/headers/berries.jpg',
-			'thumbnail_url' => '%s/images/headers/berries-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Berries', 'twentyten' )
-		),
-		'cherryblossom' => array(
-			'url' => '%s/images/headers/cherryblossoms.jpg',
-			'thumbnail_url' => '%s/images/headers/cherryblossoms-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Cherry Blossoms', 'twentyten' )
-		),
-		'concave' => array(
-			'url' => '%s/images/headers/concave.jpg',
-			'thumbnail_url' => '%s/images/headers/concave-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Concave', 'twentyten' )
-		),
-		'fern' => array(
-			'url' => '%s/images/headers/fern.jpg',
-			'thumbnail_url' => '%s/images/headers/fern-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Fern', 'twentyten' )
-		),
-		'forestfloor' => array(
-			'url' => '%s/images/headers/forestfloor.jpg',
-			'thumbnail_url' => '%s/images/headers/forestfloor-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Forest Floor', 'twentyten' )
-		),
-		'inkwell' => array(
-			'url' => '%s/images/headers/inkwell.jpg',
-			'thumbnail_url' => '%s/images/headers/inkwell-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Inkwell', 'twentyten' )
-		),
-		'path' => array(
-			'url' => '%s/images/headers/path.jpg',
-			'thumbnail_url' => '%s/images/headers/path-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Path', 'twentyten' )
-		),
-		'sunset' => array(
-			'url' => '%s/images/headers/sunset.jpg',
-			'thumbnail_url' => '%s/images/headers/sunset-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Sunset', 'twentyten' )
-		)
-	) );
+  // register_default_headers( array(
+  //  'berries' => array(
+  //    'url' => '%s/images/headers/berries.jpg',
+  //    'thumbnail_url' => '%s/images/headers/berries-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Berries', 'twentyten' )
+  //  ),
+  //  'cherryblossom' => array(
+  //    'url' => '%s/images/headers/cherryblossoms.jpg',
+  //    'thumbnail_url' => '%s/images/headers/cherryblossoms-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Cherry Blossoms', 'twentyten' )
+  //  ),
+  //  'concave' => array(
+  //    'url' => '%s/images/headers/concave.jpg',
+  //    'thumbnail_url' => '%s/images/headers/concave-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Concave', 'twentyten' )
+  //  ),
+  //  'fern' => array(
+  //    'url' => '%s/images/headers/fern.jpg',
+  //    'thumbnail_url' => '%s/images/headers/fern-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Fern', 'twentyten' )
+  //  ),
+  //  'forestfloor' => array(
+  //    'url' => '%s/images/headers/forestfloor.jpg',
+  //    'thumbnail_url' => '%s/images/headers/forestfloor-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Forest Floor', 'twentyten' )
+  //  ),
+  //  'inkwell' => array(
+  //    'url' => '%s/images/headers/inkwell.jpg',
+  //    'thumbnail_url' => '%s/images/headers/inkwell-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Inkwell', 'twentyten' )
+  //  ),
+  //  'path' => array(
+  //    'url' => '%s/images/headers/path.jpg',
+  //    'thumbnail_url' => '%s/images/headers/path-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Path', 'twentyten' )
+  //  ),
+  //  'sunset' => array(
+  //    'url' => '%s/images/headers/sunset.jpg',
+  //    'thumbnail_url' => '%s/images/headers/sunset-thumbnail.jpg',
+  //    /* translators: header image description */
+  //    'description' => __( 'Sunset', 'twentyten' )
+  //  )
+  // ) );
 }
 endif;
 
