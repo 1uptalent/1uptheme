@@ -127,8 +127,9 @@ function twentyten_setup() {
 		
 	// Define shortcodes
 	function doBoxShortcode($base_class, $atts, $content = "" ) {
-    $classes = $base_class . " " . ($atts['last']!=null ?'last':'');
-    return "<div class='{$classes}'>{$content}</div>";
+	  $title = $atts['title'];
+    $classes = $base_class . " " . $atts['class'];
+    return "<div class='{$classes}'><h3>{$title}</h3>{$content}</div>";
   }
   function doBox2Shortcode($atts, $content = "") { return doBoxShortcode("box2", $atts, $content); }
   function doBox3Shortcode($atts, $content = "") { return doBoxShortcode("box3", $atts, $content); }
