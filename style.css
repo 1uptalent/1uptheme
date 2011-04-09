@@ -1412,15 +1412,24 @@ code {
 
 /* = Shortcodes
 -------------------------------------------------------------- */
+
 .box2 {
-  width: 295px;
+  width: 398px;
   display: inline-block;
-  margin: 5px 10px;
+  padding: 5px 10px;
+  vertical-align: top;
 }
 .box3 {
   width: 200px;
   display: inline-block;
-  margin: 5px;
+  padding: 5px;
+  vertical-align: top;
+}
+.wide .box2 {
+  width: 448px;
+}
+.wide .box3 {
+  width: 300px;
 }
 
 /* = Helpers
