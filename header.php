@@ -74,7 +74,7 @@
   			  <h1><span class="first">You dreamed it . . .</span> <span class="last">Let's build it together</span></h1>
   			</div>
   			<div class="long">
-  			  We develop your software without hurting your busines. We share our experience with your team so you don't depend on us. We show you progress every week.
+  			  We develop your software without hurting your business. We share our experience with your team so you don't depend on us. We show you progress every week.
   			  <span class="last">We play in your team</span>
   			</div>
 			</div>
