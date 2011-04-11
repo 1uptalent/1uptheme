@@ -1,8 +1,8 @@
-# Copyright (C) 2010 Twenty Ten
-# This file is distributed under the same license as the Twenty Ten package.
+# Copyright (C) 2010 1up talent
+# This file is distributed under the same license as the 1up talent package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Twenty Ten 1.2\n"
+"Project-Id-Version: 1up talent 1.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/twentyten\n"
 "POT-Creation-Date: 2011-02-22 08:27:35+00:00\n"
 "MIME-Version: 1.0\n"
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#. #-#-#-#-#  twentyten.pot (Twenty Ten 1.2)  #-#-#-#-#
+#. #-#-#-#-#  twentyten.pot (1up talent 1.2)  #-#-#-#-#
 #. Theme URI of the plugin/theme
 #: footer.php:33
 msgid "http://wordpress.org/"
@@ -371,7 +371,7 @@ msgid "Blog Archives"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Twenty Ten"
+msgid "1up talent"
 msgstr ""
 
 #. Description of the plugin/theme

@@ -14,8 +14,8 @@
  * <code>get_template_part( 'loop', 'index' );</code>
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage 1up_talent
+ * @since 1up talent 1.0
  */
 ?>
 
@@ -41,7 +41,7 @@
 <?php
 	/* Start the Loop.
 	 *
-	 * In Twenty Ten we use the same loop in multiple contexts.
+	 * In 1up talent we use the same loop in multiple contexts.
 	 * It is broken into three main parts: when we're displaying
 	 * posts that are in the gallery category, when we're displaying
 	 * posts in the asides category, and finally all other posts.

@@ -10,8 +10,8 @@
  * This can be overridden in child themes with loop-single.php.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.2
+ * @subpackage 1up_talent
+ * @since 1up talent 1.2
  */
 ?>
 

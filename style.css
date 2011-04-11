@@ -1,7 +1,7 @@
 /*
-Theme Name: Twenty Ten
+Theme Name: 1up theme
 Theme URI: http://wordpress.org/
-Description: The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the "Asides" and "Gallery" categories, and has an optional one-column page template that removes the sidebar.
+Description: The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. 1up talent supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the "Asides" and "Gallery" categories, and has an optional one-column page template that removes the sidebar.
 Author: the WordPress team
 Version: 1.2
 License: GNU General Public License
@@ -326,7 +326,7 @@ a:link {
 	color: #c80100;
 }
 a:visited {
-	color: #743399;
+	color: #a80100;
 }
 a:active,
 a:hover {
@@ -558,6 +558,12 @@ div.menu li {
 	color: #000;
 	line-height: 1.5em;
 	margin: 0 0 20px 0;
+}
+#content h2 {
+  font-size: 1.7em;
+}
+#content h3 {
+  font-size: 1.5em;
 }
 #content table {
 	border: 1px solid #e7e7e7;
@@ -1413,23 +1419,29 @@ code {
 /* = Shortcodes
 -------------------------------------------------------------- */
 
-.box2 {
-  width: 398px;
+.box2,
+.box3 {
   display: inline-block;
-  padding: 5px 10px;
   vertical-align: top;
+}
+#content .box2 h3, 
+#content .box3 h3 {
+  border-bottom: 1px dotted #c80100;
+}
+.box2 {
+  width: 378px;
+  padding: 5px 20px;
 }
 .box3 {
-  width: 200px;
-  display: inline-block;
-  padding: 5px;
-  vertical-align: top;
+  width: 190px;
+  padding: 5px 10px;
 }
 .wide .box2 {
-  width: 448px;
+  width: 428px;
 }
 .wide .box3 {
-  width: 300px;
+  width: 270px;
+  padding: 5px 20px;
 }
 
 /* = Helpers
