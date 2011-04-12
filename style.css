@@ -1451,7 +1451,7 @@ code {
 
 .oneuptalent {
   color: black;
-  font-family: Helvetica, Arial;
+  font-family: "Helvetica Neue", Helvetica, Arial;
   font-size: 1.2em;
 }
 .oneuptalent .one {
@@ -1465,6 +1465,7 @@ code {
 }
 .oneuptalent .talent {
   color: #333;
+  font-weight: 100;
 }
 
 #footer .blog-name {
