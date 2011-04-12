@@ -197,10 +197,9 @@ h1,h2,h3,h4,h5,h6 {
 	margin-right: 0;
 }
 #site-info {
-	float: left;
+	float: right;
 	font-size: 14pt;
 	font-weight: bold;
-	width: 700px;
 }
 #site-generator {
 	float: right;
@@ -1466,6 +1465,12 @@ code {
 }
 .oneuptalent .talent {
   color: #333;
+}
+
+#footer .blog-name {
+  min-width: 143px;
+  min-height: 59px;
+  background-image: url(images/logo-small.png);
 }
 
 /* = Helpers
