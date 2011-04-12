@@ -133,8 +133,10 @@ function twentyten_setup() {
   }
   function doBox2Shortcode($atts, $content = "") { return doBoxShortcode("box2", $atts, $content); }
   function doBox3Shortcode($atts, $content = "") { return doBoxShortcode("box3", $atts, $content); }
+  function doOneUp($atts, $content) { return "<span class='oneuptalent'><span class='one'>1</span><span class='up'>up</span><span class='talent'>talent</span></span>"; }
 	add_shortcode('box2', 'doBox2Shortcode');
 	add_shortcode('box3', 'doBox3Shortcode');
+	add_shortcode('1up', 'doOneUp');
 }
 
 endif;
