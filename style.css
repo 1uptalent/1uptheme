@@ -76,7 +76,11 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #secondary {
 	float: right;
 	overflow: hidden;
-	width: 220px;
+	width: 200px;
+	padding-left: 20px;
+	font-size: 0.7em;
+	border-left: 1px #e1e1e1 solid;
+	color: #555;
 }
 #secondary {
 	clear: right;
@@ -139,7 +143,6 @@ h3#reply-title,
 .page-title,
 .pingback p,
 .reply,
-.widget-title,
 .wp-caption-text {
 	font-family: "Nobile", "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
@@ -158,7 +161,6 @@ code {
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Merriweather", serif;
 }
-
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -363,7 +365,7 @@ a:hover {
   width: 700px;
 }
 #masthead {
-  background: #000 url(images/top_bg) repeat-x scroll 0px -70px;
+  background: #000 url(images/top_bg.png) repeat-x scroll 0px -70px;
   padding: 0;
   min-height: 250px;
   color: #eee;
@@ -1191,8 +1193,8 @@ h3#reply-title {
 	margin: 0 0 18px 0;
 }
 .widget-title {
-	color: #222;
-	font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
 }
 .widget-area a:link,
 .widget-area a:visited {
@@ -1443,6 +1445,27 @@ code {
 .wide .box3 {
   width: 270px;
   padding: 5px 20px;
+}
+.smaller {
+  font-size: 0.8em;
+}
+
+.oneuptalent {
+  color: black;
+  font-family: Helvetica, Arial;
+  font-size: 1.2em;
+}
+.oneuptalent .one {
+  font-weight: bold;
+  letter-spacing: -3px; 
+}
+.oneuptalent .up {
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding-right: 1px;
+}
+.oneuptalent .talent {
+  color: #333;
 }
 
 /* = Helpers
