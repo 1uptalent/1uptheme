@@ -34,7 +34,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile|Merriweather:regular,italic,bold,bolditalic" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:r,i,b,bi|Merriweather:r,i,b,bi&subset=latin" type="text/css">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
