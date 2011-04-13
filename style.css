@@ -1428,7 +1428,7 @@ code {
 }
 #content .box2 h3, 
 #content .box3 h3 {
-  border-bottom: 1px dotted #c80100;
+  border-bottom: 1px solid #c80100;
 }
 .box2 {
   width: 378px;
