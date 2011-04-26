@@ -566,7 +566,9 @@ div.menu li {
 }
 #content h3 {
   font-size: 1.5em;
+  border-bottom: 1px solid #c80100;
 }
+
 #content table {
 	border: 1px solid #e7e7e7;
 	margin: 0 -1px 24px 0;
@@ -1435,10 +1437,6 @@ code {
 .box3 {
   display: inline-block;
   vertical-align: top;
-}
-#content .box2 h3, 
-#content .box3 h3 {
-  border-bottom: 1px solid #c80100;
 }
 .box2 {
   width: 270px;
