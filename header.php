@@ -36,6 +36,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:r,i,b,bi|Merriweather:r,i,b,bi&subset=latin" type="text/css">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<!--[if IE 6]> 
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/ie6.css" /> 
+<![endif]-->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
