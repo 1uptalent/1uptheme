@@ -13,8 +13,19 @@
  */
 
 get_header(); ?>
-
-		<div id="container" class="one-column">
+<?php
+  $container_class = "one-column";
+  if ( have_posts() )
+    the_post();
+    $pic = get_post_meta($post->ID, 'left-pic', true);
+    if ($pic)
+      $container_class .= " left-pic";
+      $style = "style='background: url(". $pic . ") no-repeat left top'";
+    end;
+    rewind_posts();
+  end;
+?>
+		<div id="container" class="<?php echo $container_class; ?>" <?php echo $style; ?> >
 			<div id="content" role="main">
 
 			<?php

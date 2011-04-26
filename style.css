@@ -1418,6 +1418,16 @@ code {
 	}
 }
 
+/* = Special layouts
+-------------------------------------------------------------- */
+.left-pic .page {
+  padding-left: 200px;
+}
+.left-pic #content .page h1 {
+  margin-left: -200px;
+}
+
+
 /* = Shortcodes
 -------------------------------------------------------------- */
 
@@ -1431,7 +1441,7 @@ code {
   border-bottom: 1px solid #c80100;
 }
 .box2 {
-  width: 378px;
+  width: 270px;
   padding: 5px 20px;
 }
 .box3 {
